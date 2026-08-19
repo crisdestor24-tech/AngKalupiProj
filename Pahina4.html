@@ -1,0 +1,73 @@
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ang Kalupi - Pahina 4</title>
+<link rel="icon" type="image/png" href="images/tab.png">
+<link rel="stylesheet" href="css/story.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="title">PAHINA 4</h1>
+
+<img src="images/E4.png" class="story-image" alt="Pahina 4">
+
+<div class="story">
+
+<p>
+Sa kaniyang paglalakad ay nabunggo siya ng isang batang
+marungis, na ayon sa itsura ay agad na napulaan ni
+Aling Marta.
+</p>
+
+</div>
+
+ <div class="navigation">
+
+    <a href="Pahina3.html" class="btn btn-back">
+        ◀ BALIK
+    </a>
+
+    <div class="page">
+        4 / 18
+        <br>
+        ○ ○ ○ ● ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ 
+    </div>
+
+    <a href="Pahina5.html" class="btn btn-next">
+        SUNOD ▶
+    </a>
+
+</div>
+
+</div>
+<script>
+document.addEventListener("keydown", function(e){
+
+    // Huwag gumana kapag may tina-type
+    if (["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) return;
+
+    // Left Arrow = Balik
+    if(e.key === "ArrowLeft"){
+        const back = document.querySelector(".btn-back");
+        if(back){
+            window.location.href = back.href;
+        }
+    }
+
+    // Right Arrow = Sunod
+    if(e.key === "ArrowRight"){
+        const next = document.querySelector(".btn-next");
+        if(next){
+            window.location.href = next.href;
+        }
+    }
+
+});
+</script>
+
+</body>
+</html>

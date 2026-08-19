@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Kalupi - Pahina 7</title>
+    <link rel="icon" type="image/png" href="images/tab.png">
+    <link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">PAHINA 7</h1>
+    <img src="images/E7.png" class="story-image" alt="Pahina 7">
+    <div class="story">
+        <p>Naguguluhan siya pero isa lang ang pumasok sa isip niya.</p>
+        <p>Natitiyak niya na ang batang marungis na nakabangga niya kanina ang kumuha ng kaniyang pitaka.</p>
+    </div>
+    <div class="navigation">
+        <a href="Pahina6.html" class="btn btn-back">◀ BALIK</a>
+        <div class="page">7 / 18<br>○ ○ ○ ○ ○ ○ ● ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○</div>
+        <a href="Pahina8.html" class="btn btn-next">SUNOD ▶</a>
+    </div>
+</div>
+<script>
+document.addEventListener("keydown", function(e){
+    if (["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) return;
+    if(e.key === "ArrowLeft") { const b = document.querySelector(".btn-back"); if(b) b.click(); }
+    if(e.key === "ArrowRight") { const n = document.querySelector(".btn-next"); if(n) n.click(); }
+});
+</script>
+</body>
+</html>

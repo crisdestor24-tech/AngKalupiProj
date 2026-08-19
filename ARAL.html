@@ -1,0 +1,58 @@
+<!-- ARAL.html -->
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ang Kalupi - ARAL</title>
+    <link rel="icon" type="image/png" href="images/tab.png">
+    <link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">ARAL NG <br>KUWENTO</h1>
+
+    <div class="story">
+        <p>
+            Ang kuwentong <strong>Ang Kalupi</strong> ay nagtuturo sa atin
+            na huwag agad humusga sa kapwa batay lamang sa kanilang
+            anyo, pananamit, o katayuan sa buhay.
+        </p>
+
+        <p>
+            Mahalaga ang pag-alam muna sa buong katotohanan bago
+            magbintang o gumawa ng desisyon, sapagkat ang maling
+            paghatol ay maaaring magdulot ng matinding pagsisisi
+            at hindi na maibabalik na kapahamakan.
+        </p>
+
+        <p>
+            Pairalin natin ang pag-unawa, paggalang,
+            at pagiging makatarungan sa bawat tao.
+        </p>
+    </div>
+
+    <div class="credits">
+        <h3>Prepared by: DESTOR, ARCRIS L - BSIT 21010</h3>
+    </div>
+
+    <div class="navigation">
+        <a href="Pahina18.html" class="btn btn-back">◀ BALIK</a>
+        <div class="page">WAKAS</div>
+        <a href="index.html" class="btn btn-next">🏠 HOME</a>
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("keydown", function(e){
+    if (["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) return;
+    if(e.key === "ArrowLeft") { const b = document.querySelector(".btn-back"); if(b) b.click(); }
+    if(e.key === "ArrowRight") { const n = document.querySelector(".btn-next"); if(n) n.click(); }
+});
+</script>
+
+</body>
+</html>
